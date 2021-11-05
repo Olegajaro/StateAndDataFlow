@@ -24,9 +24,9 @@ struct RegisterView: View {
                     Text("\(userName.count)")
                         .foregroundColor(.gray)
                 }
-                .focused($isOnFocus)
                 
-                Button(action: registerUser) {
+                .focused($isOnFocus)
+                Button(action: { user.addUser(name: userName) }) {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
@@ -38,10 +38,6 @@ struct RegisterView: View {
         .onTapGesture {
             isOnFocus = false
         }
-    }
-    
-    private func registerUser() {
-        user.addUser(name: userName)
     }
 }
 

@@ -26,13 +26,9 @@ struct ContentView: View {
             
             Spacer()
             
-            LogOutButtonView(action: logOut)
+            LogOutButtonView(action: user.deleteUser)
         }
         .padding()
-    }
-    
-    private func logOut() {
-        user.deleteUser()
     }
 }
 
