@@ -22,7 +22,7 @@ struct RegisterView: View {
                         .multilineTextAlignment(.center)
                         .padding(.leading, 40)
                     Text("\(userName.count)")
-                        .foregroundColor(Color(white: 0.75))
+                        .foregroundColor(userName.count > 2 ? .green : .red)
                         .padding(.trailing, 10)
                 }
                 .focused($isOnFocus)
