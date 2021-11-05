@@ -46,6 +46,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1080311F2735953C00618A5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10C2A60027317C4C002FD601 /* StarterView.swift */,
+				10C2A5FC273177DA002FD601 /* RegisterView.swift */,
+				10C2A5EC27316A37002FD601 /* ContentView.swift */,
+				10C2A5F827316E77002FD601 /* ButtonView.swift */,
+				109555FE273322E700F4E924 /* LogOutButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		108031202735954800618A5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1080311D27351DE600618A5C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		108031212735955C00618A5C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				10C2A5FA2731712F002FD601 /* TimeCounter.swift */,
+				10C2A5FE27317995002FD601 /* UserManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		10C2A5DE27316A37002FD601 = {
 			isa = PBXGroup;
 			children = (
@@ -66,16 +95,11 @@
 			isa = PBXGroup;
 			children = (
 				10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */,
-				10C2A5EC27316A37002FD601 /* ContentView.swift */,
-				10C2A5FC273177DA002FD601 /* RegisterView.swift */,
-				10C2A60027317C4C002FD601 /* StarterView.swift */,
-				10C2A5F827316E77002FD601 /* ButtonView.swift */,
-				109555FE273322E700F4E924 /* LogOutButtonView.swift */,
+				108031202735954800618A5C /* Models */,
+				1080311F2735953C00618A5C /* Views */,
+				108031212735955C00618A5C /* ViewModels */,
 				10C2A5EE27316A37002FD601 /* Assets.xcassets */,
 				10C2A5F027316A37002FD601 /* Preview Content */,
-				10C2A5FA2731712F002FD601 /* TimeCounter.swift */,
-				10C2A5FE27317995002FD601 /* UserManager.swift */,
-				1080311D27351DE600618A5C /* User.swift */,
 			);
 			path = StateAndDataFlow;
 			sourceTree = "<group>";

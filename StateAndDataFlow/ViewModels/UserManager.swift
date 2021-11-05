@@ -22,7 +22,6 @@ final class UserManager: ObservableObject {
         getUser()
     }
     
-    
     func addUser(name: String) {
         if name.count > 2 {
             currentUser.name = name

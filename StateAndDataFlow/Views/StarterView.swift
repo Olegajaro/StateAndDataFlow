@@ -15,8 +15,16 @@ struct StarterView: View {
         Group {
             if user.currentUser.isRegister {
                 ContentView()
+                    .transition(.asymmetric(
+                        insertion: .move(edge: .bottom),
+                        removal: .move(edge: .top)
+                    ))
             } else {
                 RegisterView()
+                    .transition(.asymmetric(
+                        insertion: .move(edge: .top),
+                        removal: .move(edge: .bottom)
+                    ))
             }
         }
     }

@@ -20,12 +20,12 @@ struct RegisterView: View {
                 HStack {
                     TextField("Type your name...", text: $userName)
                         .multilineTextAlignment(.center)
-                        .padding(.leading)
+                        .padding(.leading, 30)
                     Text("\(userName.count)")
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color(white: 0.75))
                 }
-                
                 .focused($isOnFocus)
+                
                 Button(action: { user.addUser(name: userName) }) {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
