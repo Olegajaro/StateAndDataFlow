@@ -20,9 +20,10 @@ struct RegisterView: View {
                 HStack {
                     TextField("Type your name...", text: $userName)
                         .multilineTextAlignment(.center)
-                        .padding(.leading, 30)
+                        .padding(.leading, 40)
                     Text("\(userName.count)")
                         .foregroundColor(Color(white: 0.75))
+                        .padding(.trailing, 10)
                 }
                 .focused($isOnFocus)
                 
