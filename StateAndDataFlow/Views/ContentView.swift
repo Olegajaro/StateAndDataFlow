@@ -22,11 +22,17 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding(.top, 100)
             
-            ButtonView(timer: timer)
-            
-            Spacer()
-            
-            LogOutButtonView(action: user.deleteUser)
+            VStack {
+                ButtonView(title: timer.buttonTitle, color: .red) {
+                    timer.startTimer()
+                }
+                
+                Spacer()
+                
+                ButtonView(title: "LOG OUT", color: .blue) {
+                    user.deleteUser()
+                }
+            }
         }
         .padding()
     }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1080311E27351DE600618A5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080311D27351DE600618A5C /* User.swift */; };
-		109555FF273322E700F4E924 /* LogOutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109555FE273322E700F4E924 /* LogOutButtonView.swift */; };
 		10C2A5EB27316A37002FD601 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */; };
 		10C2A5ED27316A37002FD601 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2A5EC27316A37002FD601 /* ContentView.swift */; };
 		10C2A5EF27316A37002FD601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C2A5EE27316A37002FD601 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		1080311D27351DE600618A5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		109555FE273322E700F4E924 /* LogOutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButtonView.swift; sourceTree = "<group>"; };
 		10C2A5E727316A37002FD601 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
 		10C2A5EC27316A37002FD601 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 				10C2A5FC273177DA002FD601 /* RegisterView.swift */,
 				10C2A5EC27316A37002FD601 /* ContentView.swift */,
 				10C2A5F827316E77002FD601 /* ButtonView.swift */,
-				109555FE273322E700F4E924 /* LogOutButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,7 +181,6 @@
 			files = (
 				10C2A60127317C4C002FD601 /* StarterView.swift in Sources */,
 				10C2A5FF27317995002FD601 /* UserManager.swift in Sources */,
-				109555FF273322E700F4E924 /* LogOutButtonView.swift in Sources */,
 				10C2A5ED27316A37002FD601 /* ContentView.swift in Sources */,
 				10C2A5FD273177DA002FD601 /* RegisterView.swift in Sources */,
 				10C2A5EB27316A37002FD601 /* StateAndDataFlowApp.swift in Sources */,
