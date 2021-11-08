@@ -15,6 +15,10 @@ final class UserManager: ObservableObject {
         }
     }
     
+    var nameIsValid: Bool {
+        currentUser.name.count > 2
+    }
+    
     private let userDefaults = UserDefaults.standard
     private let key = "user_info"
     
@@ -23,7 +27,7 @@ final class UserManager: ObservableObject {
     }
     
     func addUser(name: String) {
-        if name.count > 2 {
+        if nameIsValid {
             currentUser.name = name
             currentUser.isRegister.toggle()
         }

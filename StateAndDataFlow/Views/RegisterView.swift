@@ -9,32 +9,30 @@ import SwiftUI
 
 struct RegisterView: View {
     
-    @State private var userName = ""
-    @EnvironmentObject private var user: UserManager
+    @EnvironmentObject private var userManager: UserManager
     
     @FocusState private var isOnFocus: Bool
     
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
-                HStack {
-                    TextField("Type your name...", text: $userName)
-                        .multilineTextAlignment(.center)
-                        .padding(.leading, 40)
-                    Text("\(userName.count)")
-                        .foregroundColor(userName.count > 2 ? .green : .red)
-                        .padding(.trailing, 10)
-                }
-                .focused($isOnFocus)
+                UserNameTF(
+                    name: $userManager.currentUser.name,
+                    nameIsValid: userManager.nameIsValid
+                )
+                    .focused($isOnFocus)
                 
-                Button(action: { user.addUser(name: userName) }) {
+                Button(action: registerUser) {
                     Image(systemName: "checkmark.circle")
                     Text("OK")
                 }
-                .foregroundColor(userName.count > 2 ? .blue : Color(white: 0.75))
+                .disabled(!userManager.nameIsValid)
             }
-            .padding()
-            .padding(.top, -75)
+            .padding(EdgeInsets(top: -75,
+                                leading: 16,
+                                bottom: 16,
+                                trailing: 16))
+
         }
         .onTapGesture {
             isOnFocus = false
@@ -42,8 +40,38 @@ struct RegisterView: View {
     }
 }
 
+extension RegisterView {
+    func registerUser() {
+        if !userManager.currentUser.name.isEmpty {
+            userManager.addUser(name: userManager.currentUser.name)
+        }
+    }
+}
+
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
+            .environmentObject(UserManager())
+    }
+}
+
+struct UserNameTF: View {
+    
+    @Binding var name: String
+    var nameIsValid = false
+    
+    var body: some View {
+        ZStack {
+            TextField("Type your name...", text: $name)
+                .multilineTextAlignment(.center)
+            
+            HStack{
+                Spacer()
+                Text("\(name.count)")
+                    .foregroundColor(nameIsValid ? .green : .red)
+                    .padding([.top, .trailing])
+            }
+            .padding(.bottom)
+        }
     }
 }
