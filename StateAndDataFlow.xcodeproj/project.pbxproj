@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1075FA7B2739367400A0FC9E /* ButtonAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FA7A2739367400A0FC9E /* ButtonAppearanceModifier.swift */; };
+		1075FA7D2739394000A0FC9E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FA7C2739394000A0FC9E /* StorageManager.swift */; };
 		1080311E27351DE600618A5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080311D27351DE600618A5C /* User.swift */; };
 		10C2A5EB27316A37002FD601 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */; };
 		10C2A5ED27316A37002FD601 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2A5EC27316A37002FD601 /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1075FA7A2739367400A0FC9E /* ButtonAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAppearanceModifier.swift; sourceTree = "<group>"; };
+		1075FA7C2739394000A0FC9E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		1080311D27351DE600618A5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		10C2A5E727316A37002FD601 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				10C2A5FA2731712F002FD601 /* TimeCounter.swift */,
 				10C2A5FE27317995002FD601 /* UserManager.swift */,
+				1075FA7C2739394000A0FC9E /* StorageManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				10C2A5FD273177DA002FD601 /* RegisterView.swift in Sources */,
 				10C2A5EB27316A37002FD601 /* StateAndDataFlowApp.swift in Sources */,
 				10C2A5FB2731712F002FD601 /* TimeCounter.swift in Sources */,
+				1075FA7D2739394000A0FC9E /* StorageManager.swift in Sources */,
 				1080311E27351DE600618A5C /* User.swift in Sources */,
 				10C2A5F927316E77002FD601 /* ButtonView.swift in Sources */,
 			);

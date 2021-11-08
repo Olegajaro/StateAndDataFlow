@@ -43,7 +43,8 @@ struct RegisterView: View {
 extension RegisterView {
     func registerUser() {
         if !userManager.currentUser.name.isEmpty {
-            userManager.addUser(name: userManager.currentUser.name)
+            userManager.currentUser.isRegister.toggle()
+            StorageManager.shared.save(user: userManager.currentUser)
         }
     }
 }

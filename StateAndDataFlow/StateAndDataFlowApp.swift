@@ -10,12 +10,12 @@ import SwiftUI
 @main
 struct StateAndDataFlowApp: App {
     
-    @StateObject private var userManager = UserManager()
+    private let user = StorageManager.shared.getUser()
     
     var body: some Scene {
         WindowGroup {
             StarterView()
-                .environmentObject(userManager)
+                .environmentObject(UserManager(currentUser: user))
         }
     }
 }

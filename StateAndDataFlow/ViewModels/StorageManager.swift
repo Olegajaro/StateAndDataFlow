@@ -5,35 +5,31 @@
 //  Created by Олег Федоров on 08.11.2021.
 //
 
-import Foundation
+import SwiftUI
 
 class StorageManager {
     
     static let shared = StorageManager()
     
-    private let userDefaults = UserDefaults.standard
-    private let key = "user_info"
+    @AppStorage("user") private var userData: Data?
     
     private init() {}
     
-    func saveUser() {
-        let user = getUser()
-        if let encodedData = try? JSONEncoder().encode(user) {
-            userDefaults.set(encodedData, forKey: key)
-        }
+    func save(user: User) {
+        userData = try? JSONEncoder().encode(user)
     }
     
     func getUser() -> User {
         guard
-            let data = userDefaults.data(forKey: key),
-            let saveUser = try? JSONDecoder().decode(User.self, from: data)
+            let user = try? JSONDecoder().decode(User.self, from: userData ?? Data())
         else { return User() }
         
-        return saveUser
+        return user
     }
     
     func clear(userManager: UserManager) {
-        userManager.currentUser.name = ""
         userManager.currentUser.isRegister = false
+        userManager.currentUser.name = ""
+        userData = nil
     }
 }
