@@ -9,7 +9,7 @@ import Foundation
 
 final class UserManager: ObservableObject {
     
-    @Published var currentUser: User = User(name: "", isRegister: false) {
+    @Published var currentUser: User = User() {
         didSet{
             saveUser()
         }
