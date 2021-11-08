@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1075FA7B2739367400A0FC9E /* ButtonAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1075FA7A2739367400A0FC9E /* ButtonAppearanceModifier.swift */; };
 		1080311E27351DE600618A5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1080311D27351DE600618A5C /* User.swift */; };
 		10C2A5EB27316A37002FD601 /* StateAndDataFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */; };
 		10C2A5ED27316A37002FD601 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C2A5EC27316A37002FD601 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1075FA7A2739367400A0FC9E /* ButtonAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAppearanceModifier.swift; sourceTree = "<group>"; };
 		1080311D27351DE600618A5C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		10C2A5E727316A37002FD601 /* StateAndDataFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateAndDataFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C2A5EA27316A37002FD601 /* StateAndDataFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAndDataFlowApp.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				10C2A5FC273177DA002FD601 /* RegisterView.swift */,
 				10C2A5EC27316A37002FD601 /* ContentView.swift */,
 				10C2A5F827316E77002FD601 /* ButtonView.swift */,
+				1075FA7A2739367400A0FC9E /* ButtonAppearanceModifier.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1075FA7B2739367400A0FC9E /* ButtonAppearanceModifier.swift in Sources */,
 				10C2A60127317C4C002FD601 /* StarterView.swift in Sources */,
 				10C2A5FF27317995002FD601 /* UserManager.swift in Sources */,
 				10C2A5ED27316A37002FD601 /* ContentView.swift in Sources */,
